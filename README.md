@@ -8,8 +8,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Notes
 
-In case of error getting the code up and runnning, you may want to try this command
+In case of some errore getting the code up and runnning, you may want to try this command
 
 ```sh
 ng update @angular-devkit/build-angular 
 ```
+
+If the above command works, it is because your packages are in need of being updated to latest version.
