@@ -85,19 +85,12 @@ export class AppComponent {
             }
             else {
                 this.product.id = this.createId();
-                if (this.product.image != undefined) {
-                    // upload file here
-                } else {
-                    this.product.image = 'default-avatar.png';
-                }
-
+                this.product.image = 'default-avatar.png';
                 this.products.push(this.product);
                 this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Player created successfully!', life: 3000 });
             }
 
             this.products = [...this.products];
-            console.log(this.products);
-
             this.productDialog = false;
             this.product = {};
         }
